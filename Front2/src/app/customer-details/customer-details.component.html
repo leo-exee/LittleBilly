@@ -1,0 +1,29 @@
+<h3>
+    <a class="go--back" [routerLink]="['']"><i class="fa fa-arrow-left"></i></a>
+  {{customer.first_name}} {{customer.last_name}}
+</h3>
+<h4>Email: {{customer.email}}</h4>
+<h4>Phone: {{customer.phone}}</h4>
+
+<div class="no--data" *ngIf="sales.length === 0">
+  No Sales :(
+</div>
+
+<div *ngFor="let sale of sales">
+  <div class="item">
+    <span class="text">
+      <span><i class="fa-solid fa-calendar-days"></i> {{sale.sale_date}}</span>
+      <span>Quantity : <span style="font-weight: bold">{{sale.quantity}}</span></span>
+      <span>Points : <span style="font-weight: bold">{{sale.points}} pts</span></span>
+    </span>
+    <span style="font-weight: bold">{{sale.product_currency}} {{sale.product_price}}</span>
+  </div>
+</div>
+
+<div class="pages" >
+  <div *ngFor="let i of totalPage">
+    <button style="{{page === i ? 'filter: opacity(50%); cursor: default' : ''}}" (click)="loadCustomerSales(i)">{{i}}</button>
+  </div>
+</div>
+
+

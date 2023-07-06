@@ -1,0 +1,50 @@
+.item {
+  border-radius: 50px;
+  width: 100%;
+  display: flex;
+  background: #eee;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.item a {
+  font-size: 20px;
+  color: #777;
+  transition: all 0.3s;
+}
+
+.item a:focus, .item a:hover, .item a:active {
+  color: #000;
+}
+
+.item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.item .text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+}
+
+input {
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  color: #777;
+  transition: all 0.3s;
+  padding: 15px;
+  background: #eee;
+}
+
+input:focus {
+  color: #000;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+}
+

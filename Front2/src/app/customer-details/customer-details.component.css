@@ -1,0 +1,50 @@
+.item {
+  border-radius: 50px;
+  width: 100%;
+  display: flex;
+  background: #eee;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.item .text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+}
+
+.pages {
+  font-size: 18px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages button {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  background: #eee;
+  transition: all 0.3s;
+  border-radius: 50px;
+}
+
+.pages button:hover, .pages button:focus, .pages button:active {
+  border-radius: 10px;
+  background: #ccc;
+}
+
+.go--back {
+  color: #777;
+  transition: all 0.3s;
+}
+
+.go--back:hover, .go--back:focus, .go--back:active {
+  color: #000;
+}
+
